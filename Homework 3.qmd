@@ -191,7 +191,9 @@ The axes are logically positioned, with the double y-axis design justified by th
 
 The figure is relatively clean with no gridlines or unnecessary backgrounds, but the dual y-axis, three symbol types, and two line styles make it pretty complex. The data-to-ink ratio is pretty low, but a simpler design could convey the same information more efficiently.
 
+# d.
 
+Splitting the figure into two panels (one for each y-axis) would reduce cognitive load and eliminate the confusing dual-axis design. Adding raw data points behind the means would allow readers to assess distribution and variability, and explaining the dashed vs. solid line styles in the caption would remove a current ambiguity.
 
 
 
