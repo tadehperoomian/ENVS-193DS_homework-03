@@ -187,4 +187,11 @@ The statistical test used in this study is ANOVA, because the study is comparing
 
 The axes are logically positioned, with the double y-axis design justified by the overlay of two differently-scaled response variables. Means ± SE are shown for all data points, and the caption even states when SE bars fall within symbol size. The main weakness is the absence of  raw data, making it impossible to assess data distribution, outliers, or within-group variability beyond what SE captures. Another more minor issue is the undefined dashed vs. solid line styles.
 
+# c.
+
+The figure is relatively clean with no gridlines or unnecessary backgrounds, but the dual y-axis, three symbol types, and two line styles make it pretty complex. The data-to-ink ratio is pretty low, but a simpler design could convey the same information more efficiently.
+
+
+
+
 
