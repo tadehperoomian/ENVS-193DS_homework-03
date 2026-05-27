@@ -129,7 +129,7 @@ ggplot(drink_counts,
 ```
 
 ```{r}
-#| label: caffeinated-drinks-line
+#| label: caffeinated-drinks-points
 #mutating times on the data table
 drink_data <- clean_caffeine |> 
   mutate(hour = as.numeric(format(
@@ -159,6 +159,15 @@ ggplot(hourly_counts, aes(x = hour, y = num_drinks)) +
 
 
 **Figure 2.** Most caffeinated drinks consumed at 11:00 AM. The x-axis has the time of day, while the y-axis is the count of drinks consumed, with the points(Purple) representing the amount of drinks consumed at each time of the day. 
+
+# Problem 3
+
+# a.
+
+An idea I had for an affective visualization of my personal data would be to draw the bar graphs as coffee cups, with the cups filled up to the height of the bars. For the points graph, I could replace the purple dot representing my data with a drawing of the caffeinated drink most consumed at that time of day. For example, the 8PM point would be replaced with a drawing of a Strawberry milk tea, and most of the morning ones would be replaced by drawings of coffee cups and matchas.
+
+
+
 
 
 
