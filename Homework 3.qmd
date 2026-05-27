@@ -90,8 +90,68 @@ cor.test(kelp$temp_c,
 The Pearson Correlation test provided me with Pearson's r = -0.69, which is the same as the Spearman's ρ from Problem 1c. Pearson correlation tests for a linear relationship using raw values of temperature and kelp elongation rate, while Spearman correlation tests for a monotonic relationship using ranked values of the same variables. Both tests led me to the same result that there is a moderate to strong negative relationship between temperature and kelp frond elongation rate.
 
 
+# Problem 2
 
+# a.
 
+```{r}
+#| label: caffeinated-drinks-bar
+#removing uppercase and spaces/periods
+clean_caffeine <- caffeine |> 
+  clean_names() 
+#creating number of drinks data point
+drink_counts <- clean_caffeine |>
+  count(time_of_day, name = "num_drinks") 
+#base layer: ggplot
+ggplot(drink_counts, 
+       #x-axis: time of day
+       #y-axis: number of drinks
+       #filling color based on time of day
+       aes(x = time_of_day, 
+           y = num_drinks, 
+           fill = time_of_day)) +
+  #second layer: bar plot
+  geom_col() +
+  #relabeling title and axes
+  labs(title = "What time of Day are more drinks consumed?",
+    x = "Time of Day",
+    y = "Number of Drinks (count)"
+  ) +
+  #recoloring based on Time of Day
+  scale_fill_manual(values = c("Morning" = "skyblue", 
+                               "Afternoon" = "tomato",
+                               "Evening" = "limegreen")) +
+  #changing theme
+  theme_bw() +
+  #removing legend
+  theme(legend.position = "none")
+
+```
+
+```{r}
+#| label: caffeinated-drinks-line
+#mutating times on the data table
+drink_data <- clean_caffeine |> 
+  mutate(hour = as.numeric(format(
+    as.POSIXct(drink_date_and_time, format = "%m/%d/%Y %I:%M %p"),
+    "%H"
+  )))
+
+#creating drinks per hour count
+hourly_counts <- drink_data |>
+  count(hour, name = "num_drinks")
+
+#base layer: ggplot
+ggplot(hourly_counts, aes(x = hour, y = num_drinks)) +
+    #second layer: points
+  geom_point(color = "purple", size = 3) +
+    #relabeling title and axes
+  labs(title = "Drink Consumption Tends to Increase Later in the Day",
+       x = "Hour of Day (24-hour time)",
+       y = "Number of Drinks (count)") +
+   #changing theme from base
+  theme_bw()
+```
 
 
 
