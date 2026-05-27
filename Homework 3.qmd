@@ -1,0 +1,34 @@
+---
+title: "Homework 3"
+author: "Tadeh Peroomian"
+date: "2026-05-26"
+format: pdf
+editor: source
+---
+
+#. Homework Setup
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(janitor)
+library(readxl)
+library(here)
+
+
+kelp <- read.csv("data/temp_kelp.csv")
+caffeine <- read.csv("data/caffeinated_drinks.csv")
+
+```
+
+# Problem 1
+
+#. a
+
+The two appropriate tests are the Pearson correlation and the Spearman rank correlation. Pearson correlation measures the strength of a linear relationship between two continuous variables and assumes the data are normally distributed, while Spearman rank correlation measures the strength of a monotonic relationship using ranked data and does not require normality.
+
+
+
+
+
+
+
