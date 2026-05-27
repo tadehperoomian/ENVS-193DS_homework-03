@@ -4,6 +4,8 @@ author: "Tadeh Peroomian"
 date: "2026-05-26"
 format: pdf
 editor: source
+execute:
+  warning: false
 ---
 
 #. Homework Setup
@@ -30,22 +32,40 @@ The two appropriate tests are the Pearson correlation and the Spearman rank corr
 
 ```{r}
 #| label: visualization
-
+#base layer: ggplot
 ggplot(data = kelp,
+       #x-axis: temperature
+       #y-axis: kelp elongation
        mapping = aes(x = temp_c,
                      y = kelp_elong)) +
+  #second layer: points for scatterplot
 geom_point(color = "green", 
            size = 3) +
+  #relabelling axes and title
   labs(x = "Temperature (°C)",
        y = "Kelp Elongation Rate (cm/day)",
        title = "As Temperature Increases, Kelp Frond Elongation Rate Decreases"
   ) +
+  #changing theme from base
   theme_bw()
 
 ```
 
 
+#. c
 
+```{r}
+#| label: assumptions
+#running spearman rank correlation with temp and kelp elongation
+cor.test(kelp$temp_c,
+         kelp$kelp_elong,
+         method = "spearman"
+)
 
+```
+
+Spearman's p = -0.69
+
+For the Spearman Rank Correlation, I checked for a monotonic relationship. I used the scatterplot in part 1b, which suggested a monotonic relationship, meaning that the assumption for Spearman's was met.
 
 
