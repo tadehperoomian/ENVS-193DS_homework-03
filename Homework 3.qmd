@@ -26,11 +26,11 @@ caffeine <- read.csv("data/caffeinated_drinks.csv")
 
 # Problem 1
 
-# a.
+## a.
 
 The two appropriate tests are the Pearson correlation and the Spearman rank correlation. Pearson correlation measures the strength of a linear relationship between two continuous variables and assumes the data are normally distributed, while Spearman rank correlation measures the strength of a monotonic relationship using ranked data and does not require normality.
 
-# b.
+## b.
 
 ```{r}
 #| label: visualization
@@ -54,7 +54,7 @@ geom_point(color = "green",
 ```
 
 
-# c.
+## c.
 
 ```{r}
 #| label: assumptions
@@ -70,15 +70,15 @@ Spearman's p = -0.69
 
 For the Spearman Rank Correlation, I checked for a monotonic relationship. I used the scatterplot in part 1b, which suggested a monotonic relationship, meaning that the assumption for Spearman's was met.
 
-# d.
+## d.
 
 To evaluate the strength of the relationship between temperature and giant kelp frond elongation rate, I used a Spearman Rank Correlation, because it does not require the relationship between temperature and kelp elongation to be linear or the data to be normally distributed. We found a moderate to strong relationship between temperature and kelp frond elongation rate(Spearman's ρ = -0.69, S = 9216.1, p < 0.001, ⍺ = 0.05).
 
-# e.
+## e.
 
 The Spearman Rank Correlation test shows whether there is a consistent monotonic relationship between temperature and giant kelp frond elongation rate. The Spearman's ρ = -0.69 suggests a moderate to strong negative relationship between temperature and kelp frond elongation rate. Thus, kelp frond elongates at a higher rate at lower temperatures, and inversely at a lower rate at higher temperatures.
 
-# f.
+## f.
 
 ```{r}
 #| label: double-check
@@ -94,7 +94,7 @@ The Pearson Correlation test provided me with Pearson's r = -0.69, which is the 
 
 # Problem 2
 
-# a.
+## a.
 
 ```{r}
 #| label: caffeinated-drinks-bar
@@ -155,7 +155,7 @@ ggplot(hourly_counts, aes(x = hour, y = num_drinks)) +
   theme_bw()
 ```
 
-# b.
+## b.
 
 **Figure 1.** More caffeinated drinks consumed in the Morning (Morning:Blue, Afternoon:Red, Evening:Green). The amount of drinks consumed at each time of day is represented with a bar graph, with the height of the graph representing the number of caffeinated drinks consumed.
 
@@ -164,36 +164,36 @@ ggplot(hourly_counts, aes(x = hour, y = num_drinks)) +
 
 # Problem 3
 
-# a.
+## a.
 
 An idea I had for an affective visualization of my personal data would be to draw the bar graphs as coffee cups, with the cups filled up to the height of the bars. For the points graph, I could replace the purple dot representing my data with a drawing of the caffeinated drink most consumed at that time of day. For example, the 8PM point would be replaced with a drawing of a Strawberry milk tea, and most of the morning ones would be replaced by drawings of coffee cups and matchas.
 
 
-# b.
+## b.
 
-# c.
+## c.
 
-# d.
+## d.
 
-# e.
+## e.
 
 # Problem 4
 
-# a.
+## a.
 
 The statistical test used in this study is ANOVA, because the study is comparing more than two groups and the outcome variables are continuous.
 
 ![Figure 1](Figure_1.png)
 
-# b.
+## b.
 
 The axes are logically positioned, with the double y-axis design justified by the overlay of two differently-scaled response variables. Means ± SE are shown for all data points, and the caption even states when SE bars fall within symbol size. The main weakness is the absence of  raw data, making it impossible to assess data distribution, outliers, or within-group variability beyond what SE captures. Another more minor issue is the undefined dashed vs. solid line styles.
 
-# c.
+## c.
 
 The figure is relatively clean with no gridlines or unnecessary backgrounds, but the dual y-axis, three symbol types, and two line styles make it pretty complex. The data-to-ink ratio is pretty low, but a simpler design could convey the same information more efficiently.
 
-# d.
+## d.
 
 Splitting the figure into two panels (one for each y-axis) would reduce cognitive load and eliminate the confusing dual-axis design. Adding raw data points behind the means would allow readers to assess distribution and variability, and explaining the dashed vs. solid line styles in the caption would remove a current ambiguity.
 
