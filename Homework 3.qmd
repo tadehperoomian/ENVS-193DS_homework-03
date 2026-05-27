@@ -153,7 +153,12 @@ ggplot(hourly_counts, aes(x = hour, y = num_drinks)) +
   theme_bw()
 ```
 
+# b.
 
+**Figure 1.** More caffeinated drinks consumed in the Morning (Morning:Blue, Afternoon:Red, Evening:Green). The amount of drinks consumed at each time of day is represented with a bar graph, with the height of the graph representing the number of caffeinated drinks consumed.
+
+
+**Figure 2.** Most caffeinated drinks consumed at 11:00 AM. The x-axis has the time of day, while the y-axis is the count of drinks consumed, with the points(Purple) representing the amount of drinks consumed at each time of the day. 
 
 
 
