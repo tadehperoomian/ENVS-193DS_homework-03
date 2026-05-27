@@ -68,4 +68,18 @@ Spearman's p = -0.69
 
 For the Spearman Rank Correlation, I checked for a monotonic relationship. I used the scatterplot in part 1b, which suggested a monotonic relationship, meaning that the assumption for Spearman's was met.
 
+#. d
+
+To evaluate the strength of the relationship between temperature and giant kelp frond elongation rate, I used a Spearman Rank Correlation, because it does not require the relationship between temperature and kelp elongation to be linear or the data to be normally distributed. We found a moderate to strong relationship between temperature and kelp frond elongation rate.
+
+
+
+
+
+
+
+
+
+
+
 
