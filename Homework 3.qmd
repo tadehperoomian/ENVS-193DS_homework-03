@@ -175,4 +175,16 @@ An idea I had for an affective visualization of my personal data would be to dra
 
 # e.
 
+# Problem 4
+
+# a.
+
+The statistical test used in this study is ANOVA, because the study is comparing more than two groups and the outcome variables are continuous.
+
+![Figure 1](Figure_1.png)
+
+
+
+
+
 
