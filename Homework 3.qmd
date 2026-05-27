@@ -70,12 +70,24 @@ For the Spearman Rank Correlation, I checked for a monotonic relationship. I use
 
 #. d
 
-To evaluate the strength of the relationship between temperature and giant kelp frond elongation rate, I used a Spearman Rank Correlation, because it does not require the relationship between temperature and kelp elongation to be linear or the data to be normally distributed. We found a moderate to strong relationship between temperature and kelp frond elongation rate(Spearman ρ = -0.69, S = 9216.1, p < 0.001, ⍺ = 0.05).
+To evaluate the strength of the relationship between temperature and giant kelp frond elongation rate, I used a Spearman Rank Correlation, because it does not require the relationship between temperature and kelp elongation to be linear or the data to be normally distributed. We found a moderate to strong relationship between temperature and kelp frond elongation rate(Spearman's ρ = -0.69, S = 9216.1, p < 0.001, ⍺ = 0.05).
 
 #. e
 
 The Spearman Rank Correlation test shows whether there is a consistent monotonic relationship between temperature and giant kelp frond elongation rate. The Spearman's ρ = -0.69 suggests a moderate to strong negative relationship between temperature and kelp frond elongation rate. Thus, kelp frond elongates at a higher rate at lower temperatures, and inversely at a lower rate at higher temperatures.
 
+#. f
+
+```{r}
+#| label: double-check
+#running pearson rank correlation with temp and kelp elongation
+cor.test(kelp$temp_c,
+         kelp$kelp_elong,
+         method = "pearson"
+)
+```
+
+The Pearson Correlation test provided me with Pearson's r = -0.69, which is the same as the Spearman's ρ from Problem 1c. Pearson correlation tests for a linear relationship using raw values of temperature and kelp elongation rate, while Spearman correlation tests for a monotonic relationship using ranked values of the same variables. Both tests led me to the same result that there is a moderate to strong negative relationship between temperature and kelp frond elongation rate.
 
 
 
