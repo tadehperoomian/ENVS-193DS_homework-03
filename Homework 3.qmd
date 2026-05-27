@@ -26,6 +26,23 @@ caffeine <- read.csv("data/caffeinated_drinks.csv")
 
 The two appropriate tests are the Pearson correlation and the Spearman rank correlation. Pearson correlation measures the strength of a linear relationship between two continuous variables and assumes the data are normally distributed, while Spearman rank correlation measures the strength of a monotonic relationship using ranked data and does not require normality.
 
+#. b
+
+```{r}
+#| label: visualization
+
+ggplot(data = kelp,
+       mapping = aes(x = temp_c,
+                     y = kelp_elong)) +
+geom_point(color = "green", 
+           size = 3) +
+  labs(x = "Temperature (°C)",
+       y = "Kelp Elongation Rate (cm/day)",
+       title = "As Temperature Increases, Kelp Frond Elongation Rate Decreases"
+  ) +
+  theme_bw()
+
+```
 
 
 
