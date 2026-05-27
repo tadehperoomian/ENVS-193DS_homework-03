@@ -8,7 +8,7 @@ execute:
   warning: false
 ---
 
-#. Homework Setup
+# Homework Setup
 
 ```{r setup, include=FALSE}
 library(tidyverse)
@@ -24,11 +24,11 @@ caffeine <- read.csv("data/caffeinated_drinks.csv")
 
 # Problem 1
 
-#. a
+# a.
 
 The two appropriate tests are the Pearson correlation and the Spearman rank correlation. Pearson correlation measures the strength of a linear relationship between two continuous variables and assumes the data are normally distributed, while Spearman rank correlation measures the strength of a monotonic relationship using ranked data and does not require normality.
 
-#. b
+# b.
 
 ```{r}
 #| label: visualization
@@ -52,7 +52,7 @@ geom_point(color = "green",
 ```
 
 
-#. c
+# c.
 
 ```{r}
 #| label: assumptions
@@ -68,15 +68,15 @@ Spearman's p = -0.69
 
 For the Spearman Rank Correlation, I checked for a monotonic relationship. I used the scatterplot in part 1b, which suggested a monotonic relationship, meaning that the assumption for Spearman's was met.
 
-#. d
+# d.
 
 To evaluate the strength of the relationship between temperature and giant kelp frond elongation rate, I used a Spearman Rank Correlation, because it does not require the relationship between temperature and kelp elongation to be linear or the data to be normally distributed. We found a moderate to strong relationship between temperature and kelp frond elongation rate(Spearman's ρ = -0.69, S = 9216.1, p < 0.001, ⍺ = 0.05).
 
-#. e
+# e.
 
 The Spearman Rank Correlation test shows whether there is a consistent monotonic relationship between temperature and giant kelp frond elongation rate. The Spearman's ρ = -0.69 suggests a moderate to strong negative relationship between temperature and kelp frond elongation rate. Thus, kelp frond elongates at a higher rate at lower temperatures, and inversely at a lower rate at higher temperatures.
 
-#. f
+# f.
 
 ```{r}
 #| label: double-check
