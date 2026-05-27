@@ -113,7 +113,7 @@ ggplot(drink_counts,
   #second layer: bar plot
   geom_col() +
   #relabeling title and axes
-  labs(title = "What time of Day are more drinks consumed?",
+  labs(title = "More Caffeinated Drinks consumed in the morning",
     x = "Time of Day",
     y = "Number of Drinks (count)"
   ) +
@@ -146,7 +146,7 @@ ggplot(hourly_counts, aes(x = hour, y = num_drinks)) +
     #second layer: points
   geom_point(color = "purple", size = 3) +
     #relabeling title and axes
-  labs(title = "Drink Consumption Tends to Increase Later in the Day",
+  labs(title = "Drink Consumption Peaks at 11AM",
        x = "Hour of Day (24-hour time)",
        y = "Number of Drinks (count)") +
    #changing theme from base
@@ -167,7 +167,12 @@ ggplot(hourly_counts, aes(x = hour, y = num_drinks)) +
 An idea I had for an affective visualization of my personal data would be to draw the bar graphs as coffee cups, with the cups filled up to the height of the bars. For the points graph, I could replace the purple dot representing my data with a drawing of the caffeinated drink most consumed at that time of day. For example, the 8PM point would be replaced with a drawing of a Strawberry milk tea, and most of the morning ones would be replaced by drawings of coffee cups and matchas.
 
 
+# b.
 
+# c.
 
+# d.
+
+# e.
 
 
