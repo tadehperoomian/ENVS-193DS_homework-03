@@ -24,4 +24,4 @@ Finally, it also includes a revisit to Homework 2's article and figure, with new
 
 ## Rendered Output
 
-The rendered output is [here](The rendered output)
+The rendered output is [here](Homework-3.pdf)
