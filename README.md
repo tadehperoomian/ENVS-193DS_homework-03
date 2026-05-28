@@ -12,7 +12,7 @@ Finally, it also includes a revisit to Homework 2's article and figure, with new
 
 ## Data and file information
 
-.
+```.
 ├── README.md
 ├── code
 │   ├── Homework 3.qmd
@@ -20,7 +20,7 @@ Finally, it also includes a revisit to Homework 2's article and figure, with new
 │   └── caffeinated_drinks.csv
 │   └── temp_kelp.csv
 └── ENVS-193DS_homework-03.Rproj
-
+```
 
 ## Rendered Output
 
