@@ -171,11 +171,19 @@ An idea I had for an affective visualization of my personal data would be to dra
 
 ## b.
 
+![Sketch](Sketch.png)
+
 ## c.
+
+![Draft](homework_3_draft.jpg)
 
 ## d.
 
+I am showing the amount of drinks I consume at each time of day, represented by the amount of drink in each cup. I drew the draft on my iPad, using an art app.
+
 ## e.
+
+[View my Slides](slides.pdf)
 
 # Problem 4
 
