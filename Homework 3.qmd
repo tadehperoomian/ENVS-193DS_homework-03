@@ -117,6 +117,7 @@ ggplot(drink_counts,
   geom_col() +
   #relabeling title and axes
   labs(title = "More Caffeinated Drinks consumed in the morning",
+       subtitle = "Most Recent Observations",
     x = "Time of Day",
     y = "Number of Drinks (count)"
   ) +
@@ -150,6 +151,7 @@ ggplot(hourly_counts, aes(x = hour, y = num_drinks)) +
   geom_point(color = "purple", size = 3) +
     #relabeling title and axes
   labs(title = "Drink Consumption Peaks at 11AM",
+       subtitle = "Most Recent Observations",
        x = "Hour of Day (24-hour time)",
        y = "Number of Drinks (count)") +
    #changing theme from base
