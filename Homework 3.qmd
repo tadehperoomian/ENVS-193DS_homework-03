@@ -76,7 +76,8 @@ To evaluate the strength of the relationship between temperature and giant kelp 
 
 ## e.
 
-The Spearman Rank Correlation test shows whether there is a consistent monotonic relationship between temperature and giant kelp frond elongation rate. The Spearman's ρ = -0.69 suggests a moderate to strong negative relationship between temperature and kelp frond elongation rate. Thus, kelp frond elongates at a higher rate at lower temperatures, and inversely at a lower rate at higher temperatures.
+Our results indicate that giant kelp fronds grow more slowly as water temperatures increase, suggesting that warmer ocean conditions may negatively affect overall kelp health and productivity. Because giant kelp forests provide habitat, food, and ecosystem services for many marine species, continued warming could lead to broader ecological impacts. These findings highlight the importance of monitoring ocean temperatures and protecting kelp forests from additional stressors, particularly during marine heatwaves.
+
 
 ## f.
 
@@ -89,7 +90,7 @@ cor.test(kelp$temp_c,
 )
 ```
 
-The Pearson Correlation test provided me with Pearson's r = -0.69, which is the same as the Spearman's ρ from Problem 1c. Pearson correlation tests for a linear relationship using raw values of temperature and kelp elongation rate, while Spearman correlation tests for a monotonic relationship using ranked values of the same variables. Both tests led me to the same result that there is a moderate to strong negative relationship between temperature and kelp frond elongation rate.
+The Pearson(t = -5.189, df = 30, p-value = 1.366e-05) Correlation test provided me with Pearson's r = -0.69, which is the same as the Spearman's ρ from the Spearman(S = 9216.1, p-value = 1.29e-05) Correlation Test in Problem 1c. Pearson correlation tests for a linear relationship using raw values of temperature and kelp elongation rate, while Spearman correlation tests for a monotonic relationship using ranked values of the same variables. Both tests led me to the same result that there is a moderate negative relationship between temperature and kelp frond elongation rate.
 
 
 # Problem 2
