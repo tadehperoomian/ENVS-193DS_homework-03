@@ -8,6 +8,8 @@ format:
 editor: source
 execute:
   warning: false
+  resources:
+  - slides.pdf
 ---
 
 # Homework Setup
